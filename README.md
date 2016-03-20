@@ -1,70 +1,27 @@
-# Mr. Doc Theme Starter Kit
-A responsive starter kit for Mr. Doc themes. 
+# mr-doc-theme-starter-kit
 
-*This starter kit is based on [mrdoc-theme-cayman](https://github.com/iwatakeshi/doxx-theme-cayman).*
+> A reactive starter kit for Mr. Doc themes.
 
+## Build Setup
 
-## Requirements
+``` bash
+# install dependencies
+npm install
 
-* Ruby
-* [Ruby Sass](http://sass-lang.com/install)
-* Gulp
-* Bower
+# serve with hot reload at localhost:8080
+npm run dev
 
-## Usage
+# build for production with minification
+npm run build
 
-Create a bower file using `bower init` and add the following dependencies using `bower i --save`:
+# run unit tests
+npm run unit
 
-* `prism` - for syntax highlighting
-* `bootstrap-sass` - for labels and other components
+# run e2e tests
+npm run e2e
 
-Of course, you are not limited to using bootstrap or sass and are free to use whatever frontend framework you like.
-
-## Build
-
-```bash
-# Build the theme for production
-gulp build
+# run all tests
+npm test
 ```
 
-## Develop
-
-```bash
-# Build and watch the theme for development
-gulp
-```
-
-## Customizations
-
-By default, a Sass version of [Bootstrap](http://getbootstrap.com/) 
-and a [custom Sass file](https://github.com/iwatakeshi/doxx-theme-starter-kit/blob/master/scss/index.scss) is used for the starter kit. Also, the starter kit is using gulp as its build system and it should be easy enough to see and understand that gulp is doing most of the hard work including minification.
-
-## Publish
-
-Create a package with `mr-doc-theme` as the keyword and add the following dev dependencies:
-
-```bash
-npm i --save-dev gulp gulp-shell gulp-connect gulp-ruby-sass gulp-clipboard gulp-uglify gulp-uglifycss lodash
-```
-
-
-Once you have created the package, you are free to customize the template under `template/`.
-You may also edit the gulp file if you add more dependencies through bower. 
-
-Just make sure that your assets are placed under `assets/` and that you edit the template to add those assets.
-
-As far as the asset's paths are concerned, the relative path is taken care for you by Mr. Doc. You will only need to add `target.relative.path` to the asset's path as shown below.
-
-Example: 
-
-```jade
-script(src=target.relative.path + 'js/...')
-
-link(rel='stylesheet', href=target.relative.path + 'css/...')
-```
-
-When all is set and done, take a screenshot of your theme, add it to your readme using [Google Drive to host your image](https://www.thegooru.com/how-to-host-an-image-from-google-drive/), and publish the theme!
-
-## License
-
-This project is licensed under [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/).
+For detailed explanation on how things work, checkout the [guide](https://github.com/vuejs-templates/webpack#vue-webpack-boilerplate) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
