@@ -107,7 +107,7 @@ const tasks = {
   }
 }
 
-module.exports = files => {
+module.exports = (files, options) => {
   return new Promise((resolve, reject) => {
     // Write the comments to static/ directory
     tasks.write.comments(files)
